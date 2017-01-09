@@ -1,5 +1,5 @@
 require 'httparty'
-
+# this actually worked
 class Kele
   include HTTParty
 
@@ -9,7 +9,7 @@ class Kele
     raise "Invalid email or password" if response.code == 404
     @auth_token = response["auth_token"]
   end
-  
+
   private
 
   def api_endpoint(endpoint)
