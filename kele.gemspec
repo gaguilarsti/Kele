@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
    s.description   = 'A client for the Bloc API'
    s.authors       = ['Gama Aguilar']
    s.email         = 'gama-aguilar@hotmail.com'
-   s.files         = ['lib/kele.rb', 'lib/kele/roadmap.rb', 'lib/kele/messages.rb']
+   s.files         = ['lib/kele.rb', 'lib/kele/roadmap.rb', 'lib/kele/messages.rb', 'lib/kele/submissions.rb']
    s.require_paths = ["lib"]
    s.homepage      =
      'http://rubygems.org/gems/kele'

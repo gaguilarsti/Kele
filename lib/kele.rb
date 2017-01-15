@@ -2,11 +2,13 @@ require 'httparty'
 require 'json'
 require 'kele/roadmap'
 require 'kele/messages'
+require 'kele/submissions'
 
 class Kele
   include HTTParty
   include Roadmap
-  include Messages 
+  include Messages
+  include Submissions
 
   def initialize(username, password)
     response = self.class.post(api_endpoint("sessions"), body: { "email": username, "password": password })
